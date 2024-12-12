@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {padding: 0; margin: 0; list-style: none;}
+
+    ul, li {list-style: none;}
+    .logo {text-align: center;}
+    .menu {text-align: center;
+           background-color: aqua;
+          }
+    .menu > ul > li {display: inline-block;}
+
+    section {
+        height: 2000px;
+        background-color: yellow;
+        margin-top: 121px; 
+        /* 헤더의 높이만큼 컨텐츠의 내역의 여백을 */
+        }
+
+    header {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        background-color: #fff;
+        }
+    
+    .aside {
+        position: fixed;
+        background-color: green;
+        top: 10px;
+        right: 10px;
+        z-index: 10;
+        
+    }
+
+    
+
+
+ </style>
+
+
+<body>
+    
+    <header class="logo">
+        <div>
+            <img src="img/bgimg.png" alt="이미지">
+        </div>    
+        
+        <nav class="menu">
+            <ul>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- 포지션이 겹쳤을떄 우선순위는 큰값일수록 위로 배치 된다-->
+    <aside class="aside">
+        <p>TOP</p>
+    </aside>
+
+    <section>
+        컨텐츠영역...
+    </section>
+
+</body>
+</html>

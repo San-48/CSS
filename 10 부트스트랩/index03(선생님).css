@@ -1,0 +1,43 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+ul, li{list-style: none;}
+a {text-decoration: none;}
+img {height: auto; max-width: 100%;}
+
+/* 상품 상세 */
+.detail-box > .title {
+    font-size: 25px;
+    min-height: 350px; /* 350이하로는 줄지않고 내용이 많으면 가변된다 */
+}
+.detail-box > .price {
+    font-size: 28px;
+    font-weight: 900;
+    border-top:  1px solid #e3e3e3;
+    border-bottom:  1px solid #e3e3e3;
+    padding: 10px 0; /* 위아래, 좌우 */
+}
+.detail-box > .delivery {
+    color: #777
+}
+
+.detail-control {margin-top: 20px;}
+.detail-control > .price {overflow: hidden;}
+.detail-control > .price > .left {float: left; font-size: 10px; line-height: 40px;}
+.detail-control > .price > .right {
+    float: right;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.detail-control > .order {overflow: hidden;}
+.detail-control > .order > .left {float: left; width: 50%;
+                                  border: 1px solid #e3e3e3;
+                                  background-color: #fff;
+                                  padding: 10px 0;
+                                 } 
+.detail-control > .order > .right {float: right; width: 50%;
+                                   border: 1px solid #e3e3e3;
+                                   background-color: #2b6ad0;
+                                   padding: 10px 0;
+                                   color: #fff;
+                                  }
+

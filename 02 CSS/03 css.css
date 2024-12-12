@@ -1,0 +1,11 @@
+
+
+.abox p {color: red;}
+.bbox > p {color: blueviolet;}
+
+input[type=date],
+input[type=passord] {
+    color:red;
+}
+
+a[href=example] {color:yellow}

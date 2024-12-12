@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+     
+        .wrap .inner {
+        border: 1px solid yellow
+        display: inline;
+        width: 100px; 
+        /* 인라인 요소들은 박수 너비 지정만 가능 */
+        
+        .wrap span {
+            display: block;
+
+        }
+
+        .box div {
+            border: 1px solid #777
+        display: inline-box
+            }
+
+
+
+
+</style>
+
+
+<body>
+
+
+    <div class="wrap">
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+    </div>
+
+    <div class="wrap">
+        <span>박스</span>
+        <span>박스</span>
+        <span>박스</span>
+    </div>
+
+    <div class="box">
+        <div>인라인블록</div>
+        <div>인라인블록</div>
+        <div>인라인블록</div>
+    </div>
+
+    <div class="content" style="display:none;">
+        안보이게 하기!
+    </div>
+
+
+</body>
+</html>

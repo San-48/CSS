@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    .bigbox {
+        border: 1px solid #777;
+        width: 800px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .bigbox::after{
+        content: "";
+        display: block;
+        clear:both;
+    }
+
+    .bigbox .box{
+        float: left;
+        border : 1px solid #777;
+        width : 16.6666%;
+        box-sizing: border-box;
+        }
+
+        /* 부모상자가 자식을 담지 못하는 현상 발생
+           2가지 문법중에 1가지를 쓰면 됩니다. (그냥 암기!)
+           1. 부모태그에 가상선택자적용
+             .bigbox::after{
+                            content: "";
+                            display: block;
+                            clear:both;
+                            }
+    
+           2. 부모태그에 overflow:hidden; */
+    
+    .list {
+        border: 1px solid #777;
+        width: 50%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .list > li {
+        float: left;
+        width: 50%;
+
+    }
+
+    .content { 
+        border: 1px solid #777;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .left {float: left;}
+    .right {float: right;}    
+    
+
+
+</style>
+
+
+<body>
+
+    <div class="bigbox">
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+    </div>
+
+    <hr>
+        <ul class="list">
+            <li>상자</li>
+            <li>상자</li>
+            <li>상자</li>
+            <li>상자</li>
+            <li>상자</li>
+            <li>상자</li>
+            <li>상자</li>
+            <li>상자</li>
+            <li>상자</li>
+        </ul>
+
+    <hr>
+        <div class="content">
+            <div class="left">왼쪽상자</div>
+            <div class="right">왼쪽상자</div>
+        </div>
+    
+</body>
+
+
+</html>
